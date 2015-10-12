@@ -191,7 +191,7 @@ describe ISO3166::Country do
       countries = ISO3166::Country.all
       expect(countries).to be_an(Array)
       expect(countries.first).to be_an(ISO3166::Country)
-      expect(countries.size).to eq(250)
+      expect(countries.size).to eq(251)
     end
 
     it 'should allow to customize each country representation passing a block to the method' do
@@ -199,7 +199,7 @@ describe ISO3166::Country do
       expect(countries).to be_an(Array)
       expect(countries.first).to be_an(Array)
       expect(countries.first.size).to eq(3)
-      expect(countries.size).to eq(250)
+      expect(countries.size).to eq(251)
     end
   end
 
@@ -230,7 +230,7 @@ describe ISO3166::Country do
       expect(countries).to be_an(Array)
       expect(countries.first[0]).to be_a(String)
       expect(countries.first[0]).to eq('Afghanistan')
-      expect(countries.size).to eq(250)
+      expect(countries.size).to eq(251)
     end
   end
 
@@ -341,7 +341,7 @@ describe ISO3166::Country do
   describe 'codes' do
     it 'returns a hash with the data of the country' do
       expect(ISO3166::Country.codes).to be_a Array
-      expect(ISO3166::Country.codes.size).to eq(250)
+      expect(ISO3166::Country.codes.size).to eq(251)
     end
   end
 
